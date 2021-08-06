@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>iKøbenhavn</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <header>
+            <nav>
+                <ul>
+
+                    <li><a href="index.html"><img src="Imagnes/Logo.png" alt=""></a></li>
+                    <li><a href="index.html">NYHEDER</a></li>
+                    <li><a href="https://www.dr.dk/nyheder/politik">POLITIK</a></li>
+                    <li><a href="https://politiken.dk/debat/">DEBAT</a></li>
+                     <li><a href="sport.html">SPORT</a></li>
+                  <li><a href="https://www.dr.dk/nyheder/kultur">KULTUR</a></li>
+                    <li><a href="https://www.koegebib.dk/nyheder/faglitteratur/100-vigtige-begivenheder-i-danmarks-historie">BEGIVENHEDER</a></li>
+
+                    <li><a class="active" href="abonemant1.html">ABONEMANT</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="abonemant">
+                <h1> Prøv iKøbenhavn gratis <br>i 3 måneder</h1>
+            </div>
+
+            <form action="svar.html" class="myForm">
+
+
+                <div class="form1">
+
+                    <label class="required" for="email1">Indtast din email:</label>
+                    <input type="email" id="email1" placeholder="fx-test@gmail.com">
+
+                    <label class="required" for="email2">Bekræft din email:</label>
+                    <input type="email" id="email2" placeholder="fx-test@gmail.com">
+
+                    <label class="required" for="pasword1">Vælg adganskode:</label>
+                    <input type="password" id="password1" placeholder="">
+
+                    <label class="required" for="pasword2">Bekræft adganskode:</label>
+                    <input type="password" id="password2" placeholder="">
+
+                    <label class="required" for="name">Fornavn:</label>
+                    <input type="text" id="name" placeholder="">
+
+                    <label class="required" for="last-name">Efternavn:</label>
+                    <input type="text" id="lastName" placeholder="">
+
+                    <label class="required" for="phone">Telefon:</label>
+                    <input type="number" id="phone" placeholder="">
+
+                    <label class="required" for="adress">Adrasse:</label>
+                    <input type="tel" id="adress" placeholder="">
+
+                      <div class="check">
+                        <div>
+                            <input name="tilbud" type="checkbox" value="true">
+                            <label for="tilbud">Jeg vil gerne modtage dagens vigtigste nyheder som udsendes hver morgen
+                                på
+                                mail:</label>
+                        </div>
+                        <div>
+                            <input name="tilbud" type="checkbox" value="true">
+                            <label for="tilbud">Jeg vil gerne modtage relevante tilbud samt info om begivenheder,
+                                debatter
+                                m.m.:</label>
+                        </div>
+
+                        <div>
+                            <input name="tilbud" type="checkbox" value="true">
+                            <label class="required_1" for="tilbud">Jeg accepterer Dagbladet Informations
+                                produktvilkår:</label>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div class="form2">
+                    <div class="detaljer">
+
+                        <h4>Digital og weekend</h4>
+                        <p>Abonnementet giver ubegrænset adgang til den digitale avis, samt papiravisen tilsendt fredag
+                            og
+                            lørdag. Abonnementet er fortløbende og fortsætter efter den første måned til normalpris.</p>
+
+                        <br>
+
+                        <table>
+                            <tr>
+                                <th>Normalpris </th>
+                                <th> 315,00</th>
+                            </tr>
+
+                            <tr>
+                                <th>Rabat </th>
+                                <th> 315,00</th>
+                            </tr>
+
+                            <tr>
+                                <th>Pris i alt </th>
+                                <th> 0,00</th>
+                            </tr>
+
+                        </table>
+                        <p>Tilbuddet gælder kun for husstande i Danmark, der ikke har abonneret inden for de sidste 12
+                            måneder.
+                        </p>
+                    </div>
+
+                    <button type="submit">Næste </button>
+                </div>
+            </form>
+        <p id="besked"></p>
+
+            <div class class="form3">
+                <p class="questions">Har du spørgsmål angående abonnement?<br>
+
+                    <button class="btn_btn" type="submit">Skriv til os</button>
+                </p>
+
+
+            </div>
+
+
+        </main>
+
+
+
+
+
+        <footer>
+            <p>iKøbenhavn | Københavnvej 151 | 2300 København S | Tlf. 30 55 30 44 | ikøbenhavn@mail.dk <br>
+                Åbningstider: <br> Mandag: 9.00-17.00 | Tirsdag 9.00-14.00 | Onsdag: 10.00-14.00 | Torsdag: 10.00-14.00
+                | Fredag, lørdag, søndag: Lukket</Åbningstider:>
+                "Dette er en skoleopgave lavet på Next Uddannelse København/Medie"</p>
+        </footer>
+
+
+    </div>
+    <!--Wrapper ends-->
+    <script>
+    
+    const myForm = document.querySelector(".myForm");
+    myForm.addEventListener("submit", valider);
+    //Vi finde const med id besked
+    const besked = document.querySelector("#besked");
+
+    // jeg llaver en variable for position @
+let atpos;
+let dotpos;
+
+//Vi skriver function hvis der er empty name så kommer message " "Skriv dit navn!, Tak ✌";"
+function valider(evt){
+    if(this.name.value ===""){
+this.name.focus();
+besked.textContent = "Skriv dit navn! Tak ✌";
+evt.preventDefault();
+return false;
+    }
+
+ if(this.lastName.value ===""){
+this.lastName.focus();
+besked.textContent = "Skriv dit efternavn! Tak ✌";
+evt.preventDefault();
+return false;
+    }
+
+if(this.email1.value ===""){
+    this.email1.focus();
+        besked.textContent = "Skriv din email!, Tak ✌";
+        evt.preventDefault();
+        return false;
+}
+
+// email skal have et @ hvis nej så kommer message "Skal indeholde et @ som ikke må være  det første tegn i en mailadresse!, Tak ✌";
+atpos = myForm.email1.value.indexOf("@");
+
+if(atpos <= 0){
+    this.email1.focus();
+        besked.textContent = "Skal indeholde et @ som ikke må være  det første tegn i en mailadresse!, Tak ✌";
+        evt.preventDefault();
+        return false;
+}
+
+dotpos = myForm.email1.value.lastIndexOf(".");
+if(dotpos < atpos + 2){
+    this.email1.focus();
+        besked.textContent = "Der skal være minimum et tegn  mellem @ og det sidste punktum!, Tak ✌";
+        evt.preventDefault();
+        return false;
+}
+
+if(this.email2.value !== this.email1.value){
+    this.email2.focus();
+        besked.textContent = "De to mailadresser skal være ens!, Tak ✌";
+        evt.preventDefault();
+        return false;
+}
+
+if(this.password1.value ===""){
+    this.password1.focus();
+        besked.textContent = "Skriv din pasword!, Tak ✌";
+        evt.preventDefault();
+        return false;
+}
+
+if(this.password2.value !== this.password1.value){
+    this.password2.focus();
+        besked.textContent = "De to mailadresser skal være ens!, Tak ✌";
+        evt.preventDefault();
+        return false;
+}
+
+if(this.phone.value ===""){
+    this.phone.focus();
+        besked.textContent = "Skriv din phone number!, Tak ✌";
+        evt.preventDefault();
+        return false;
+}
+if(this.adress.value ===""){
+    this.adress.focus();
+        besked.textContent = "Skriv din  adress!, Tak ✌";
+        evt.preventDefault();
+        return false;
+}
+if(!/\d/.test(this.adress.value)){
+    this.adress.focus();
+  
+        besked.textContent = "Skriv din  adress good....!, Tak ✌";
+        evt.preventDefault();
+        return false;
+}
+};;
+
+
+
+
+    
+    
+    
+    </script>
+
+</body>
+
+</html>

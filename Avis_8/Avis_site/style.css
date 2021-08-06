@@ -1,0 +1,506 @@
+#wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+}
+
+/*Nav*/
+nav {
+	background-color: #e5e5e5;
+	max-width: 1000px;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	line-height: 4em;
+	width: 100%;
+	justify-content: space-between;
+	padding: 0 1em;
+}
+
+nav ul li {
+	width: 8%;
+	margin-right: 1em;
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+	color: #000000;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+a.active {
+	color: #e30613;
+	font-weight: 700;
+}
+
+nav li:last-child {
+	margin-left: auto;
+	padding-right: 0;
+	margin-right: 0;
+	
+}
+
+
+nav ul li a img {
+	padding-top: 2em;
+}
+
+h1 {
+	padding-top: 1em;
+}
+
+/*gallery*/
+
+.row_1 {
+	display: grid;
+	grid-template: repeat(1, auto) / repeat(4, 1fr);
+	align-content: center;
+	margin-top: 2em;
+	grid-gap: 2rem;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+figcaption {
+	padding-top: 1em;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.3em;
+	cursor: pointer;
+}
+
+.bike {
+	width: 640px;
+	height: 370px;
+}
+
+.bikes {
+	width: 640px;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+.bikes figcaption {
+	font-size: 44px;
+	font-family: "Inter";
+}
+
+p {
+	font-size: 24px;
+	margin-top: 0.5em;
+	font-family: "Inter";
+	color: #000000;
+	line-height: 32px;
+}
+h3 {
+	border-bottom: 1px solid black;
+	color: #e30613;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+aside {
+	float: right;
+	line-height: 32px;
+}
+
+.flex-container_left {
+	display: flex;
+	margin-top: 3em;
+}
+
+.havn {
+	margin-top: 2em;
+}
+.havn_text {
+	font-weight: bold;
+	font-size: 44px;
+}
+
+/*footer*/
+
+footer {
+	margin-top: 5em;
+	margin-bottom: 2em;
+	background-color: black;
+}
+
+footer p {
+	text-align: center;
+	font-size: 14px;
+	color: #ffffff;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/*Form*/
+
+.abonemant h1 {
+	text-align: center;
+	font-size: 56px;
+	font-weight: bold;
+}
+.number_first {
+	font-size: 56px;
+	font-weight: bold;
+	text-align: center;
+}
+span.number_first {
+	padding-top: 1.5em;
+}
+
+span.number {
+	padding-top: 1em;
+}
+
+.number {
+	font-size: 56px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.number span {
+	text-align: center;
+}
+
+.detaljer_abonemant {
+	background-color: #e5e5e5;
+	font-size: 12px;
+	padding: 0.71875em;
+}
+
+.digital {
+	margin-top: 2em;
+}
+
+.offer {
+	width: 807px;
+
+	margin: 0 auto;
+}
+
+.offer p {
+	font-size: 24px;
+	margin-top: 1em;
+}
+
+.detaljer_abonemant p {
+	font-size: 12px;
+
+	font-weight: bold;
+}
+
+.required::after {
+	content: "*";
+	color: red;
+}
+
+.required_1::before {
+	content: "*";
+	color: red;
+}
+
+.abonemanter {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 800px;
+	margin-top: 3em;
+}
+
+div.detaljer_abonemant {
+	width: 228px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+div.detaljer_abonemant .btn {
+	margin-top: 0.5em;
+}
+
+p.first_p {
+	font-weight: normal;
+	font-size: 10px;
+	margin-left: 1em;
+}
+
+.form4 {
+	width: 30%;
+	display: grid;
+	grid-template-rows: calc(100% / 1) calc(100% / 1) calc(100% / 1);
+	justify-content: space-between;
+	max-width: 228px;
+	margin-right: 3em;
+	cursor: pointer;
+}
+h4 {
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 2em;
+}
+.detaljer h4 {
+	margin: 0.5em;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 0.5em;
+}
+.myForm {
+	max-width: 803px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 3px;
+	margin-top: 4em;
+}
+.form1 {
+	display: grid;
+	grid-template-columns: 4fr 8fr;
+	grid-template-rows: repeat(6, 1.3em);
+	row-gap: 1em;
+	background-color: #e5e5e5;
+	width: 60%;
+	max-width: 542px;
+	align-items: center;
+	padding: 1.8em;
+}
+
+label {
+	grid-column: 1/2;
+	text-align: right;
+	margin-right: 1em;
+
+	font-size: 10px;
+}
+
+input,
+.check {
+	grid-column: 2/4;
+}
+
+.form2 {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 228px;
+	margin-right: 3em;
+	cursor: pointer;
+}
+
+.detaljer {
+	background-color: #e5e5e5;
+}
+
+.form3 {
+	background-color: #e5e5e5;
+	max-width: 803px;
+	cursor: pointer;
+	display: flex;
+	margin: 4em auto 0;
+	align-items: center;
+	margin-top: 2em;
+}
+
+div.form3 {
+	padding-bottom: 1em;
+}
+.detaljer p {
+	font-size: 10px;
+	color: rgba(0, 0, 0, 1);
+	align-items: center;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	line-height: 16px;
+	padding-bottom: 0.5em;
+}
+
+.check {
+	display: flex;
+	flex-direction: column;
+	max-width: 318px;
+}
+.check div {
+	display: flex;
+	margin-bottom: 1em;
+}
+.check div label {
+	margin-top: -2px;
+	text-align: left;
+	margin-left: 0.3em;
+}
+
+.svar {
+	font-size: 56px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.questions {
+	text-align: center;
+	font-size: 12px;
+	padding-top: 1em;
+	background-color: #e5e5e5;
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+button {
+	margin: 0 auto;
+	width: 205px;
+	height: 46px;
+	background-color: #e30613;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 4px;
+	border-style: none;
+	cursor: pointer;
+	margin-top: 1em;
+}
+
+.btn_btn {
+	width: 160px;
+	height: 30px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/*Table*/
+table {
+	width: 200px;
+	height: 114px;
+}
+
+th {
+	font-size: 12px;
+	border: solid;
+	border-width: 1px 0 0 0;
+}
+
+/*sport*/
+
+.red_p {
+	font-size: 18px;
+	color: #e30613;
+	text-align: center;
+}
+h2.tour {
+	font-size: 56px;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 0.5em;
+}
+
+.top_container {
+	position: relative;
+	margin-bottom: 300px;
+}
+
+/*Container of the France and <p>*/
+.header_tour {
+	position: absolute;
+	bottom: -250px;
+}
+
+/*Container for text inside*/
+.header_tour div {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px 30px 20px;
+	background-color: #fff;
+}
+
+.main_content {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.main_content_text {
+	padding: 0 50px;
+}
+
+p.verdens {
+	text-align: center;
+	font-size: 26px;
+}
+
+figure {
+	position: relative;
+}
+
+.fig figcaption {
+	position: absolute;
+	width: 145px;
+	bottom: 0px;
+	padding-left: 2em;
+	left: 100%;
+}
+
+.fig_left figcaption {
+	position: absolute;
+	width: 145px;
+	bottom: 0px;
+	padding-right: 2em;
+	right: 100%;
+}
+
+figcaption {
+	font-size: 10px;
+}
+/*gallery*/
+
+.bikes_gallery img {
+	margin-top: 2em;
+}
+
+.activitet h4 {
+	margin-top: 2em;
+}
+
+.activitet p {
+	margin-top: 2em;
+	font-size: 18px;
+	width: 477px;
+}
+
+/*knap*/
+.knap {
+	cursor: pointer;
+	color: red;
+}
+
+/*google maps*/
+
+.google-map {
+	position: relative;
+	padding-bottom: 75%; /* forholdet mellem højde og bredde*/
+	height: 0;
+	overflow: hidden;
+}
+.google-map iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
